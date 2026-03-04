@@ -23,7 +23,8 @@ if (!empty($_POST)) {
 	  
 	  $id=$_POST['id_pers'];
 	  
-	  $A=Persona::traer_datos($id);
+	  $persona = new Persona();
+$A = $persona->traer_datos($id);
 	  
 	    $nombre=$A['nombre'];
 		$apellido=$A['apellido'];

@@ -28,7 +28,8 @@ if (!empty($_POST)) {
 	  
 	  $id=$_POST['id_cart'];
 	  
-	  $A=Cartel::traer_datos($id);
+$cartel = new Cartel();
+$A = $cartel->traer_datos($id);
 	  
 	    $categoria=$A['categoria'];
 		$titulo=$A['titulo'];
